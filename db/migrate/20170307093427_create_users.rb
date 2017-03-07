@@ -8,7 +8,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :free_contents
 
       t.timestamps null: false
-      
       t.index :email, unique: true # この行を追加
     end
   end
